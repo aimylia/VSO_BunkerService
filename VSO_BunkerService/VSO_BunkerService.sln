@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VSO_BunkerService", "VSO_BunkerService\VSO_BunkerService.csproj", "{E3CF9A7D-47EB-42B1-9EE4-0DE66AD82A88}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VSO_BunkerService.Tests", "VSO_BunkerService.Tests\VSO_BunkerService.Tests.csproj", "{CC6EC52A-6F20-4C79-852C-2614C70FA1DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VSO_LIBS", "VSO_LIBS\VSO_LIBS.csproj", "{7716C06F-459C-48B1-A18D-F1C73432C55E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E3CF9A7D-47EB-42B1-9EE4-0DE66AD82A88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3CF9A7D-47EB-42B1-9EE4-0DE66AD82A88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3CF9A7D-47EB-42B1-9EE4-0DE66AD82A88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3CF9A7D-47EB-42B1-9EE4-0DE66AD82A88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC6EC52A-6F20-4C79-852C-2614C70FA1DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC6EC52A-6F20-4C79-852C-2614C70FA1DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC6EC52A-6F20-4C79-852C-2614C70FA1DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC6EC52A-6F20-4C79-852C-2614C70FA1DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7716C06F-459C-48B1-A18D-F1C73432C55E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7716C06F-459C-48B1-A18D-F1C73432C55E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7716C06F-459C-48B1-A18D-F1C73432C55E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7716C06F-459C-48B1-A18D-F1C73432C55E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7716C06F-459C-48B1-A18D-F1C73432C55E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VSO_LIBS</RootNamespace>
+    <AssemblyName>VSO_LIBS</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DatasModels\Business\Bunker\BunkerComment.cs" />
+    <Compile Include="DatasModels\Business\Bunker\BunkerInquiry.cs" />
+    <Compile Include="DatasModels\Business\Bunker\BunkerOrder.cs" />
+    <Compile Include="DatasModels\Business\Bunker\BunkerQuotation.cs" />
+    <Compile Include="DatasModels\Business\Bunker\BunkerRelation.cs" />
+    <Compile Include="DatasModels\Business\InquiryInformation.cs" />
+    <Compile Include="DatasModels\Business\OrderInformation.cs" />
+    <Compile Include="DatasModels\Business\QuotationInformation.cs" />
+    <Compile Include="DatasModels\Log\Bunker\BunkerInquiryLog.cs" />
+    <Compile Include="DatasModels\Log\Bunker\BunkerOrderLog.cs" />
+    <Compile Include="DatasModels\Log\Bunker\BunkerQuotationLog.cs" />
+    <Compile Include="DatasModels\Log\Bunker\EBunkerInquiryOperationType.cs" />
+    <Compile Include="DatasModels\Log\Bunker\EBunkerOrderOperationType.cs" />
+    <Compile Include="DatasModels\Log\Bunker\EBunkerQuotationOperationType.cs" />
+    <Compile Include="DatasModels\Log\VanPointInformationLog.cs" />
+    <Compile Include="DatasModels\ModelType\EBunkerInquiryStatusType.cs" />
+    <Compile Include="DatasModels\ModelType\EBunkerOrderStatusType.cs" />
+    <Compile Include="DatasModels\ModelType\EBunkerQuotationStatusType.cs" />
+    <Compile Include="DatasModels\ModelType\EBunkerStageType.cs" />
+    <Compile Include="DatasModels\ModelType\EFisherType.cs" />
+    <Compile Include="DatasModels\ModelType\EFishingGroudType.cs" />
+    <Compile Include="DatasModels\ModelType\EFuelType.cs" />
+    <Compile Include="DatasModels\ModelType\EReeferGearType.cs" />
+    <Compile Include="DatasModels\ModelType\EVanPointType.cs" />
+    <Compile Include="DatasModels\ModelType\EVesselNationalityType.cs" />
+    <Compile Include="DatasModels\ModelType\LogType\EVanPointOperationType.cs" />
+    <Compile Include="DatasModels\OpDbContext.cs" />
+    <Compile Include="DatasModels\Systema\BroadcastInformation.cs" />
+    <Compile Include="DatasModels\User\SupplierInformation.cs" />
+    <Compile Include="DatasModels\User\UserDetail.cs" />
+    <Compile Include="DatasModels\VanPoint\VanPointInformation.cs" />
+    <Compile Include="DatasModels\Vessel\FisherInformation.cs" />
+    <Compile Include="DatasModels\Vessel\ReeferInformation.cs" />
+    <Compile Include="DatasModels\Vessel\TankerInformation.cs" />
+    <Compile Include="DatasModels\Vessel\VesselInfo.cs" />
+    <Compile Include="DbOperation\DirectDbOperation.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserOp\UserBaseOp.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DatasModels\Business\Transshipment\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
