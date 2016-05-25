@@ -7,5 +7,6 @@ namespace VSO_BunkerService.Models.User
 {
     public class SupplierInfor
     {
+        public int InfoId { get; set; }
     }
 }
